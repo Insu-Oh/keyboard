@@ -76,7 +76,13 @@ function keyIndi(event) {
   });
 }
 
+function resizeCanvas() {
+  ctx.canvas.width = window.innerWidth;
+  ctx.canvas.height = window.innerHeight;
+}
+
 function init() {
+  resizeCanvas();
   userWidth = prompt("Enter the size", 700);
   COLOR1 = prompt("Enter the color-1", "skyblue");
   COLOR2 = prompt("Enter the color-2", "gray");
