@@ -109,7 +109,8 @@ function declareKeyCode() {
   degits[51].keyCode = 188;
   degits[52].keyCode = 190;
   degits[53].keyCode = 191;
-  degits[54].keyCode = 16;
+  degits[54].keyCode = 38;
+  degits[55].keyCode = 16;
   
   degits[56].keyCode = 20;
   degits[57].keyCode = 18;
@@ -121,11 +122,11 @@ function declareKeyCode() {
   degits[63].keyCode = 32;
   degits[64].keyCode = 32;
   degits[65].keyCode = 32;
-  degits[66].keyCode = 38;
+  degits[66].keyCode = 93;
 
-  degits[67].keyCode = 93;
-  degits[68].keyCode = 18;
-  degits[69].keyCode = 37;
+  degits[67].keyCode = 37;
+  degits[68].keyCode = 40;
+  degits[69].keyCode = 39;
 
 
 }
@@ -144,9 +145,9 @@ function resizeCanvas() {
 
 function init() {
   resizeCanvas();
-  userWidth = prompt("Enter the size", 700);
-  COLOR1 = prompt("Enter the color-1", "skyblue");
-  COLOR2 = prompt("Enter the color-2", "gray");
+  userWidth = prompt("Enter the size", 1000);
+  COLOR1 = prompt("Enter the color-1", "pink");
+  COLOR2 = prompt("Enter the color-2", "skyblue");
   drawDegit();
   declareKeyCode();
 }
